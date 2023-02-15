@@ -41,8 +41,8 @@ class App extends Component {
 		return (
 			<div id="main">
 				<ul>
-					{App.cityList.map((city, idx) => (
-						<li key={'location' + idx + 1}>{city.name}</li>
+					{this.cityList.map((city, idx) => (
+						<li key={'location' + (idx + 1)}>{city.name}</li>
 					))}
 				</ul>
 			</div>
