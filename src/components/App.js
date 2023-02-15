@@ -42,9 +42,9 @@ class App extends Component {
 		return (
 			<div id="main">
 				<ol>
-					<li key={'location' + idx++}>{this.cityList[0].name}</li>
-					<li key={'location' + idx++}>{this.cityList[1].name}</li>
-					<li key={'location' + idx++}>{this.cityList[2].name}</li>
+					<li key={`location${idx++}`}>{this.cityList[0].name}</li>
+					<li key={`location${idx++}`}>{this.cityList[1].name}</li>
+					<li key={`location${idx++}`}>{this.cityList[2].name}</li>
 				</ol>
 			</div>
 		);
