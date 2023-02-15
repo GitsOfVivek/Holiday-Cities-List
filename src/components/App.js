@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react';
 import '../styles/App.css';
 
+let idx = 1;
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -40,11 +41,11 @@ class App extends Component {
 	render() {
 		return (
 			<div id="main">
-				{this.cityList.map((city, idx) => (
-					<ol>
-						<li key={'location' + (idx + 1)}>{city.name}</li>
-					</ol>
-				))}
+				<ol>
+					<li key={'location' + idx++}>{this.cityList[0].name}</li>
+					<li key={'location' + idx++}>{this.cityList[1].name}</li>
+					<li key={'location' + idx++}>{this.cityList[2].name}</li>
+				</ol>
 			</div>
 		);
 	}
